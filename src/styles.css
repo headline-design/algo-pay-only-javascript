@@ -78,6 +78,12 @@ h3#snoopy {
   font-weight: 400;
 }
 
+.algopay-type,
+h3#snoopy2 {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
 .algopay-type {
   box-sizing: border-box;
   font-size: 16px;
@@ -255,6 +261,27 @@ button.Box__StyledBox .modal-close {
 }
 
 h3#snoopy {
+  position: relative;
+  min-height: 0.8em;
+  background: #f8f8f9;
+  padding: 0.8em 1.2em;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease,
+    box-shadow 0.1s ease;
+  border-radius: 0.28571429rem;
+  overflow-wrap: break-word !important;
+  flex-flow: wrap;
+  white-space: normal;
+  box-shadow: inset 0 0 0 1px rgb(34 36 38/22%), 0 0 0 0 transparent;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: small;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+h3#snoopy2 {
   position: relative;
   min-height: 0.8em;
   background: #f8f8f9;
