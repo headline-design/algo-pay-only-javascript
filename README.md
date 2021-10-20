@@ -1,2 +1,2 @@
 # algo-pay-only-javascript
-Created with CodeSandbox
+Work in progress project to port AlgoPay react to pure javascript
