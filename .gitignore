@@ -8,5 +8,4 @@
 
 # production
 /build
-/dist
 /.cache
