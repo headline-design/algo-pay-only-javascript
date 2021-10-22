@@ -1,4 +1,4 @@
-import "./styles.css";
+//import "./styles.css";
 
 import Pipeline from "@pipeline-ui-2/pipeline";
 
