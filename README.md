@@ -10,8 +10,9 @@ npm run build
 to correctly show css after bulding, modify the index.html that is generated in the dist folder by:
 
 - removing one of the `<link>` tags for the css
-- removing the numeric hash from the remaining `<link>` tag so that the href reads "styles.css"
+- removing the numeric hash from the remaining `<link>`tag so that the href reads "styles.css"
 - renaming the js file to "index.js"
+- renaming the `<script>` tag src to "index.js"
 
 Finally, copy your styles.css file into the dist folder.
 
