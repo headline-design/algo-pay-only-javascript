@@ -157,10 +157,13 @@ function send() {
     myAlgoWallet,
     index
   ).then((data) => {
+    if (data !== undefined){
     Object.assign(state, { txID: data });
     document.getElementById("sendscreen").style.display = "none";
     document.getElementById("algoflex3").style.display = "block";
     document.getElementById("algolink").href = "https://algoexplorer.io/tx/" + state.txID;
+    }
+    else {alert("transaction cancelled")}
   });
 }
 
