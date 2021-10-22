@@ -11,15 +11,77 @@
   outline: 0;
 }
 
-button#algopaybutton {
-  background-color: #4550e60d;
-  color: #4550e6;
+h6.snoopy-6 {
+  margin-bottom: 0px;
 }
 
-button#algopaybutton:hover {
-  color: #fff;
-  background-color: #4550e6;
+svg.bi.bi-card-text {
+  margin-right: .5rem;
 }
+
+svg.transaction-ovw {
+  opacity: 60%;
+}
+
+.snoopy-box-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #dadcde69;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c7c7c8;
+  opacity: 80%;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 16px;
+}
+
+.toast-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  padding-bottom: 12px;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: #6c757d;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-clip: padding-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+p#snoopy2 {
+  margin-bottom: 0px;
+}
+
+button#algopay-btn:active {
+  color: #fff;
+  background-color: #4550e6 !important;
+  border-color: #4550e6;
+}
+
+button#algopay-btn:hover {
+  color: #fff;
+  background-color: #727aec;
+  border-color: #4550e6;
+}
+
+button#algopay-btn {
+  background-color: #4550e6;
+  color: #fff;
+}
+
 
 a#algolink {
   font-weight: 600;
@@ -46,8 +108,16 @@ p.text-progress {
   margin-bottom: 0;
 }
 
+.snoopy-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
 .bd-callout {
-  padding: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border: 1px solid #e9ecef;
@@ -59,15 +129,26 @@ p.text-progress {
   margin-bottom: 0!important;
 }
 
+@media (max-width: 325px){
+  snoopy-small {
+    display: none;
+}
+}
+
 p#snoopy {
   margin-bottom: 0!important;
   overflow-wrap: anywhere;
+}
+
+.snoopy-box-4 {
+  display: flex;
 }
 
 .snoopy-box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  opacity: 85%;
 }
 
 
@@ -5585,7 +5666,7 @@ a.footer-link {
   overflow: hidden;
 }
 
-button#algopaybutton {
+button#algopay-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5613,11 +5694,11 @@ path.ap-sm {
   font-style: italic;
 }
 
-button#algopaybutton:hover {
+button#algopay-btn:hover {
   color: #fff;
 }
 
-h5#algopaybutton {
+h5#algopay-btn {
   margin-bottom: 0px !important;
   padding-bottom: 0px;
   color: #4550e6;
