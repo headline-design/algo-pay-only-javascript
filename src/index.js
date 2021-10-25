@@ -101,12 +101,16 @@ function getZeros() {
         }
         Object.assign(state, { stateAmount: amount / parseInt(value) });
         Object.assign(state, { assetName: data.asset.params["unit-name"] });
+        document.getElementById("snoopy2").innerText = "" + (state.stateAmount) + " " + state.assetName;
+
       })
       .catch(function () {
         alert("Error occured  " + url2);
       });
   } else {
     Object.assign(state, { stateAmount: amount / 1000000 });
+    document.getElementById("snoopy2").innerText = "" + (state.stateAmount) + " " + state.assetName;
+
   }
 }
 
@@ -138,13 +142,11 @@ function connect() {
     Object.assign(state, { con_status_text: "Connected" });
     Object.assign(state, { tableVis: true });
     updateBalance();
-    getZeros();
     document.getElementById("sure").style.display = "none";
     document.getElementById("shhh").style.display = "none";
     document.getElementById("tablevis").style.display = "block";
     document.getElementById("sendscreen").style.display = "block";
     document.getElementById("snoopy").innerText = "" + state.address.slice(0, 20) + "...";
-    document.getElementById("snoopy2").innerText = "" + (state.stateAmount || 0) + " " + state.assetName;
   });
 }
 
@@ -175,7 +177,7 @@ function setOpen() {
   document.getElementById("firstdiv").style.display = "block";
   document.getElementById("firstdiv").className = "modal fade show";
 }
-
+getZeros();
 document.getElementById("algopay-btn").onclick = setOpen;
 document.getElementById("div-close").onclick = close;
 document.getElementById("div-close-2").onclick = close;
