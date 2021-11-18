@@ -9,7 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@pipeline-ui-2/pipeline": "1.2.5",
+    "@pipeline-ui-2/pipeline": "1.2.6",
     "parcel-bundler": "^1.6.1",
     "serve": "^12.0.1"
   },
@@ -28,7 +28,7 @@
     "Donations"
   ],
   "@parcel/bundler-default": {
-    "minBundles": 2,
+    "minBundles": 1,
     "minBundleSize": 30,
     "maxParallelRequests": 20
   }
