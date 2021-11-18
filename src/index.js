@@ -134,6 +134,10 @@ function close() {
   Object.assign({ isOpen: false });
   document.getElementById("firstdiv").style.display = "none";
   document.getElementById("firstdiv").className = "modal fade";
+  document.getElementById("sure").style.display = "block";
+    document.getElementById("shhh").style.display = "block";
+    document.getElementById("tablevis").style.display = "none";
+    document.getElementById("sendscreen").style.display = "none";
 }
 
 function connect() {
