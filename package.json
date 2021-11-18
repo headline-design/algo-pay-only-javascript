@@ -1,7 +1,7 @@
 {
   "name": "algopay-js",
   "homepage": "./",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AlgoPay JavaScript Widget",
   "main": "index.html",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@pipeline-ui-2/pipeline": "1.2.4",
+    "@pipeline-ui-2/pipeline": "1.2.5",
     "parcel-bundler": "^1.6.1",
     "serve": "^12.0.1"
   },
@@ -28,8 +28,8 @@
     "Donations"
   ],
   "@parcel/bundler-default": {
-    "minBundles": 1,
-    "minBundleSize": 3000000000000000,
+    "minBundles": 2,
+    "minBundleSize": 30,
     "maxParallelRequests": 20
   }
 }
