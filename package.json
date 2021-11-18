@@ -1,7 +1,7 @@
 {
   "name": "algopay-js",
   "homepage": "./",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "AlgoPay JavaScript Widget",
   "main": "index.html",
   "scripts": {
