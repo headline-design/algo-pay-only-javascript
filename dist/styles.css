@@ -4838,3 +4838,31 @@ a#algolink:hover {
 button#div-close {
   cursor: pointer
 }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.1rem;
+  font-size: unset;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  text-indent: 0.4rem;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #a2a8f3;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(69 80 230 / 25%);
+}
+
+  
