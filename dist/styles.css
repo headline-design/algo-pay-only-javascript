@@ -10,6 +10,12 @@
   outline: 0
 }
 
+.snoops {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 a {
   color: #4550e6;
   text-decoration: underline
