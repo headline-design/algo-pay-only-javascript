@@ -16,8 +16,6 @@ document.getElementById("root").innerHTML =
 var indexerURL = "https://algoexplorerapi.io/idx2/v2/accounts/";
 const myAlgoWallet = Pipeline.init();
 
-var inputAMT = 0;
-
 if (window.details !== undefined) {
   var index = parseInt(window.details.index);
   var amount = window.details.amount;
@@ -25,7 +23,7 @@ if (window.details !== undefined) {
   var recipient = window.details.recipient;
 } else {
   window.details = {
-    index: parseInt(137594422),
+    index: parseInt(0),
     amount: 0,
     note: "",
     recipient: "K3NSXYMHPRCK7PMYT3QUQXUGPZJ4MKWJXW2HJRYPVMQUMKJAOJEIEO4HK4",
@@ -147,6 +145,9 @@ function connect() {
 }
 
 function send() {
+  if (Pipeline.pipeConnector === "WalletConnect"){
+    alert("Click ok, then sign the transaction in your offical Algorand wallet app.")
+  }
   Pipeline.send(
     recipient,
     amount,
@@ -193,5 +194,14 @@ if (window.details.input !== false){
 function inputChanged(){
   amount = document.getElementById("amountInputter").value;
   getZeros();
-   }
 
+   }
+function showDate(){
+  let n =  new Date();
+  let y = n.getFullYear();
+  let m = n.getMonth() + 1;
+  let d = n.getDate();
+  document.getElementById("date").innerText = m + "/" + d + "/" + y;
+}
+
+showDate();
