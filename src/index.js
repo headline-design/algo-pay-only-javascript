@@ -21,18 +21,30 @@ if (window.details !== undefined) {
   var amount = window.details.amount;
   var note = window.details.note;
   var recipient = window.details.recipient;
+  var backend_enable = window.details.backend_enable;
+  var backend_url = window.details.url_backend_url;
+  var backend_value1 = window.details.backend_value1;
+  var backend_value2 = window.details.backend_value2;
+  var backend_value3 = window.details.backend_value3;
+  var backend_value4 = window.details.backend_value4;
 } else {
   window.details = {
     index: parseInt(137594422),
     amount: 0,
     note: "",
     recipient: "K3NSXYMHPRCK7PMYT3QUQXUGPZJ4MKWJXW2HJRYPVMQUMKJAOJEIEO4HK4",
-    input: true
+    input: true,
+    backend_enable = false
   }
   var amount = window.details.amount;
   var index = window.details.index;
   var note = window.details.note;
   var recipient = "K3NSXYMHPRCK7PMYT3QUQXUGPZJ4MKWJXW2HJRYPVMQUMKJAOJEIEO4HK4"; // Default address is set to HDL seed address. Please update recipient to your address before deploying.//
+  var backend_enable = false;
+  var backend_value1 = null;
+  var backend_value2 = null;
+  var backend_value3 = null;
+  var backend_value4 = null;
 }
 
 const state = {
