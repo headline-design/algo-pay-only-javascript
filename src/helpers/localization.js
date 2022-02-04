@@ -31,7 +31,9 @@ export function setLocale(locale){
               myAddress: 'Adres nadawcy',
               amount: 'Kwota',
               sendTransactionBtn: 'Wyślij',
-              cancelBtn:'Anuluj'
+              cancelBtn:'Anuluj',
+              errorSending: 'Niestety wystąpił błąd. Odśwież stronę i spróbuj ponownie.',
+              closeAlertAndSign: 'Naciśnij "OK", otwórz swój portfel Algorand i podpisz transakcję.'
             }
         }; break;
         default: window[localeSettingKey] = {

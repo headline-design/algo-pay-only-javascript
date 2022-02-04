@@ -177,7 +177,7 @@ function connect() {
 
 function send() {
   if (Pipeline.pipeConnector === "WalletConnect") {
-    alert("Close this alert, then sign the transaction in your offical Algorand wallet app.")
+    alert(localizedResourceOrDefault("closeAlertAndSign", "Close this alert, then sign the transaction in your offical Algorand wallet app."));
   }
   Pipeline.send(
     recipient,
