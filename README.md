@@ -16,9 +16,11 @@ to correctly show css after bulding, modify the index.html that is generated in 
 
 Finally, copy your styles.css file into the dist folder.
 
-test build command on localhost:
+Test build command on localhost:
 
-```serve dist
+```
+serve -s dist
+
 ```
 
 Algopay 2.1 Update: Add Post to custom URL
